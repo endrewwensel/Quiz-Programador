@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-    <html>
+    <html lang="pt-br">
         <head>
             <title>Quiz para programadores</title>
             <meta name="description" content="Um quiz para testar seus conhecimentos sobre programacao">
@@ -112,7 +111,14 @@
             <section>
                 <h2>Tabela de Pontuação</h2>
                 <table border="1">
-                    <tr>
+                    <thead>
+                        <tr>
+                          <th>Pontuação</th>
+                          <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
                         <td>0-2</td>
                         <td>Não desista! Cada tentativa é uma oportunidade de você aprender</td>
                         <tr>
@@ -127,11 +133,53 @@
                             <td>8</td>
                             <td>Perfeito! Você está muito bem informado sobre programação</td>
                         </tr>
-                    </tr>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Boa sorte na proxíma!</td>
+                            </tr>
+                        </tfoot>
+                    </tbody>
                 </table>
             </section>
+            <!--Lista de respostas-->
+            <section>
+                <h2>Verifique suas respostas</h2>
+                <details>
+                    <summary>Clique aqui para ver as respostas do quiz</summary>
+                    <ol>
+                        <li>HTML</li>
+                        <li>Domínio</li>
+                        <li>Adi_3647*mHJ.</li>
+                        <li>1991</li>
+                        <li>JavaScript, JAVA</li>
+                        <li>Arquivo deve ter extenção HTML</li>
+                        <li>type</li>
+                        <li>JAVA</li>
+                    </ol>
+                </details>
+            </section>
+            <section>
+                <h2>Nos dê o seu feedback</h2>
+                 <form>
+                    <fieldset>
+                        <legend>Informações de contato</legend>
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name"></label><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"></label><br>
+                            <label for="comments">Comentários</label><br>
+                            <textarea id="comments" name="comments" rows="8"
+                            cols="50" placeholder="Digite seus comentários aqui"></textarea>                
+                    </form>
+                </fieldset>
 
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>&copy Quiz de programação. Todos os direitos rezervados</p>
+            <p>Para conhecer mais sobre mim <a href="sobremim.html"
+             target="_blank">clique aqui</a></p>
+        </footer>
     </body>
 </html>
